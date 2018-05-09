@@ -1,0 +1,42 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fedeortiz.doctor.Map2" >
+
+    <EditText
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:layout_above="@+id/mapButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center|top"
+        android:hint="Enter address"
+        android:ems="10"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="Home"
+        android:id="@+id/backButton"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:onClick="onMapToLogInButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:text="Search"
+        android:layout_marginTop="40dp"
+        android:id="@+id/searchButton"
+        android:padding="10dp"
+        android:paddingRight="10dp"
+        android:onClick="searchButtonClick"/>
+
+</fragment>
